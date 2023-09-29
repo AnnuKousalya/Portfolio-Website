@@ -1,0 +1,577 @@
+@font-face {
+    font-family: myFont;
+    src: url(../font/montserrat/Montserrat-VariableFont_wght.ttf);
+  }
+  
+  html{
+      font-family: myFont;
+      /* scroll-behavior: smooth; */
+      font-size: 14px;
+  }
+  
+  body{
+      margin: 0%;
+  }
+  
+  #MainContainer{
+      margin-left: 290px;
+      width:100%;
+  }
+  
+  .container{
+      width: 100%;
+      min-height: 100vh;
+      max-height: fit-content;
+      border-bottom: 2px solid #58555568;
+  }
+  
+  .main_heading{
+      font-size: 2em;
+      font-weight: bold;
+      align-self: flex-start;
+      border-bottom: 5px solid #3791EC;
+      width:fit-content ;
+  }
+  
+  .sub_heading{
+      font-size: 1.5em;
+      font-weight: bold;
+  }
+  
+  .sub_text{
+      font-style: italic;
+      font-weight: bold;
+      margin-top: 0%;
+      font-size: 0.7em;
+  }
+  
+  .list{
+      padding: 5vh;
+  }
+  
+  .list *{
+      width: 100%;
+      font-size: 1.2em;
+      margin-bottom: 8px;
+  }
+  
+  .my_name{
+      font-size: inherit;
+      font-weight: bold;
+  }
+  
+  .title{
+      font-size: inherit;
+      font-weight: bold;
+  }
+  
+  .copyrights{
+      padding: 6px 20px;
+      border-radius: 5px;
+      font-size: 1.17em;
+      margin: 5px 2px;
+      background-color: #3791EC;
+      color: white;
+  }
+  
+  
+  @media screen and (max-width: 680px) {
+    #MainContainer{
+      margin-left: 60px;
+      margin-top: 60px;
+    }
+  }
+  #Menu{
+    z-index: 10;
+    position: fixed;
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  #Menu img{
+    width: 20px;
+    height: 20px;
+  }
+  
+  #Navbar{
+      width: 230px;
+      height: 100vh;
+      position:fixed;
+  
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #3791EC;
+  }
+  
+  #navbarSection{
+      width: 100%;
+      border-radius: 0px 20px 20px 0;
+      padding: 10px;
+  
+      overflow: scroll;
+      overflow-x: hidden;
+  
+      box-sizing: border-box;
+  
+  }
+  
+  #navDP{
+     
+      width:100%;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  
+      padding-top: 60px;
+  }
+  
+  #navDP img{
+    width: 100%;
+    height: auto;
+  }
+  
+  #Navbar .name{
+      width: 100%;
+      color: white;
+      text-align: center;
+  }
+  
+  #navDP img{
+      width: 100px;
+      height: 100px;
+      border-radius: 10px;
+      border: 4px solid #3791EC;
+  }
+  
+  .all_buttons{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .all_buttons a{
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  
+  .sectionButtons{
+      color: white;
+      font-weight: bold;
+      width: 100%;
+      text-align: center;
+      margin: 10;
+      box-sizing: border-box;
+      padding:10px;
+  }
+  
+  .sectionButtons:hover{
+      cursor: pointer;
+  }
+  
+  .clicked{
+      color: #3791EC;
+      background-color: white;
+      border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 5px grey;  */
+    border-radius: 10px;
+    margin:10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(241, 241, 241); 
+    border-radius: 10px;
+    border: 1px solid #3791EC;
+  }
+  
+  
+  @media screen and (max-width: 680px) {
+    #Navbar{
+      width: 100%;
+    }
+  }
+  #Home{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+
+    width: 100%;
+}
+
+#Home .img_dp{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#Home img{
+    width: 300px;
+    height: 400px;
+    border-radius: 15px;
+}
+
+
+#Home .name{
+    font-size: 3em;
+    width: fit-content;
+}
+
+
+#Home .content{
+    width: 80%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 25px;
+
+    background: rgba(144, 206, 251, 0.623);
+    /* backdrop-filter: saturate(180%) blur(10px); */
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+#Home .content_info{
+  flex-direction: column;
+}
+
+#Home .content_info,#Contacts{
+  padding: 25px;
+
+}
+
+#Home .about{
+  color: black;
+  font-size:medium;
+  width: 100%;
+  line-height: 1.5;
+}
+
+#Home .about .about_title{
+  font-weight: bold;
+  font-size: large;
+  text-decoration: underline;
+}
+
+#Home #Contacts{
+  margin: 30px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+#Home #Contacts *{
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+  color: black;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+#Home #Contacts .emails_container{
+  display: flex;
+  flex-direction: row;
+}
+
+#Home #Contacts .emails_container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#Home #Contacts .emails_container a{
+  color: white;
+  background-color: #3791EC;
+  padding: 7px 12px;
+  border-radius: 5px;
+  border: 2px solid #3791EC;
+  margin: 3px 5px;
+}
+
+#Home #Contacts .emails_container a:hover{
+  color: #3791EC;
+  background-color: white;
+}
+
+#Home #Contacts h3{
+  font-size: medium;
+}
+
+@media screen and (max-width: 680px) {
+  #Home .content{
+    width: 100%;
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+    #Home{
+      flex-wrap: wrap;
+    }
+    #Home .content{
+      width: 100%;
+      flex-direction: column;
+    }
+    #Home .name{
+       text-align: center;
+    }
+}
+
+@media screen and (min-width: 1051px){
+  #Home .about{
+    margin-bottom: 80px;
+  }
+}
+#Biography{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+}
+
+#Biography p::first-letter{
+    font-size: 2.5em;
+}
+
+#Biography p{
+    font-size: 1.2em;
+    line-height: 130%;
+    padding: 2vh;
+    text-indent: 3vw;
+}
+
+#Biography ul{
+    padding: 0 10%;
+}
+
+#Biography ul li{
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 1vh;
+}
+
+#Biography ul img{
+    width: 17px;
+    height: 17px;
+    padding: 0 1vh;
+}
+:root{
+    --primary:black;
+    --secondary:#655E6D;
+}
+
+#Education{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Education .clg_info{
+    border-left: 5px solid #6f98c1;
+    margin: 15px 0;
+    padding-left: 25px;
+}
+
+#Education .other_edu{
+    align-self: flex-start;
+    padding: 0 3%;
+}
+#Education img{
+    width: 17px;
+    height: 17px;
+}
+
+#Education .clg{
+    color: var(--primary);
+}
+
+#Education .course{
+    color: var(--secondary);
+}
+
+#Education .year{
+    color: var(--secondary);
+}
+
+#Education .place{
+    color: var(--secondary);
+}
+
+#Education .others{
+    color: var(--secondary);
+}
+
+#Education ul li{
+    font-size: 1.2em;
+    padding: 1vh;
+}
+#Research{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#Research li{
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+#Projects{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#Projects .all_projects p{
+    font-size: 1.5em;
+    padding: 25px;
+    box-sizing: border-box;
+    width: 100%;
+}
+#Projects .all_projects a{
+    position: relative;
+}
+#Projects .all_projects img{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 15%;
+    padding: 0 10px;
+}
+#Projects .link{
+    font-size: 0.8em;
+    font-style: italic;
+    font-weight: bold;
+}
+@media screen and (max-width: 680px) {
+  #Projects .project p{
+      width: 100%;
+  }
+}
+#Programs{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#Programs li{
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+#Skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+#Skills .skills_list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#Skills .skills_list li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-weight: bold;
+    font-size: 1.2em;
+
+    margin:10px;
+}
+
+#Skills .skills_list li img{
+    padding:10px;
+}
+
+#Skills ol{
+    /* line-height: 170%; */
+    padding: 5vh;
+}
+
+#Skills ol li{
+    width: 100%;
+    font-size: 1.2em;
+    margin-bottom: 8px;
+}
+#CV{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#CV .file{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 2px solid #3791EC;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    width: 25%;
+    min-width: 350px;
+
+}
+
+#CV a{
+    text-decoration: none;
+}
+
+#CV .pdf_icon{
+    width: 40px;
+    height: 45px;
+}
+#CV .file:hover{
+    background-color: #5ba9f334;
+}
+
+#CV .file h3:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+#Others{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#Others .research_areas{
+    font-weight: bold;
+}
+
+#Others p{
+    font-size: 1.4em;
+    padding-left: 3%;
+}
+
+#Others img{
+    width: 20px;
+    height: 20px;
+    padding: 0 1vh;
+}
